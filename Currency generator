@@ -1,0 +1,31 @@
+i=float(input("Enter the anount of currency in rupees = "))
+print("The amount that you have is ",i)
+print("1 Dollars(USD)")
+print("2 Mexican (Peso)")
+print("3 Hungary (Forint)")
+print("4 Euro")
+print("5 Qatar Riyal")
+cur=input("Whats the currency that you want to convert.Enter the respective number  ")
+match cur:
+    case "1":       
+        j=i/83.21
+        print(j,"dollars")
+        
+    case "2":
+        j=i/4.69
+        print(j,"Pesos")
+
+    case "3":
+        j=i/0.22
+        print(j,"Forint")
+    
+    case "4":
+        j=i/87.06
+        print(j,"Euros")
+
+    case "5":
+        j=i/22.85
+        print(j,"Riyal")
+        
+    case _:
+        print("The currency doesn't matters ,what matters is that you have money")
